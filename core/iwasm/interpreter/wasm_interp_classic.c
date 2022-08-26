@@ -3891,7 +3891,7 @@ wasm_interp_call_wasm(WASMModuleInstance *module_inst, WASMExecEnv *exec_env,
     if (argc < function->param_cell_num) {
         char buf[128];
         snprintf(buf, sizeof(buf),
-                 "invalid argument count %u, must be no smaller than %u", argc,
+                 "invalid argument count %u, must be no smaller than %u", (unsigned int)argc,
                  function->param_cell_num);
         wasm_set_exception(module_inst, buf);
         return;

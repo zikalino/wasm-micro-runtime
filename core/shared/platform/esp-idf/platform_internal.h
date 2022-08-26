@@ -22,8 +22,8 @@
 #include <sys/uio.h>
 #include <dirent.h>
 
-#include "esp_pthread.h"
-#include "esp_timer.h"
+#include "/opt/esp/idf/components/pthread/include/esp_pthread.h"
+#include "/opt/esp/idf/components/esp_timer/include/esp_timer.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
